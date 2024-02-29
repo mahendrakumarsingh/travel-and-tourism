@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEnthusiast Blog</title>
+    <link rel="stylesheet" href="part1.css">
+</head>
+<body>
+    <!-- <video autoplay loop muted plays-inline class="back-video">
+        <source src = "website video.mp4" type = "video/mp4">
+    </video> -->
+<header>
+    <!-- <video autoplay loop muted plays-inline class="back-video">
+        <source src = "website video.mp4" type = "video/mp4">
+    </video> -->
+
+<section>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src = "website video.mp4" type = "video/mp4">
+    </video>
+
+    <nav class="header-nav">
+        <a href="#services">Services</a>
+        <a href="connect.html">Contact</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <div class="main-header">
+        <h1>Explore the World Through the Eyes of Travel Enthusiasts</h1>
+        <p>Discover captivating stories, helpful tips, and amazing destinations.</p>
+        <a href="connect.html" class="cta-button">Get Started</a>
+    </div>
+</section>
+
+</header>
+    <section class="main-content">
+        <div class="container">
+            <div class="features">
+                <div class="feature-box" onclick="openNewTab('travel.html')">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Tourism</h3>
+                    <p>We travel not to escape life,but for life not to escape us.</p>
+                </div>
+
+                <div class="feature-box" onclick="openNewTab('read.html')">
+                    <div class="feature-icon">📖</div>
+                    <h3>Read</h3>
+                    <p>Enjoy well-crafted stories from passionate travelers.</p>
+                </div>
+
+                <div class="feature-box" onclick="openNewTab('connect.html')">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Connect</h3>
+                    <p>Connect with like-minded individuals.</p>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="service-box" >
+                    <!-- <img src="https://4vector.com/i/free-vector-blog-this-icon-clip-art_117022_Blog_This_Icon_clip_art_hight.png" alt="Professional Blogging"> -->
+                    <section id="services">
+                        <h3>Professional Blogging</h3>
+                        <p>Create and maintain a professional blog with our expert.Professional blogging is a way of creating and publishing high-quality content on a blog with the goal of attracting and engaging a large audience.
+                             Professional bloggers are usually paid to blog on behalf of a company or individual, and they often have a team of writers and editors who help them produce content1s
+                             <ul>
+                                <li>It can help you establish your authority and credibility in your niche or industry.</li>
+                                <li>It can generate leads and conversions for your products or services.</li>
+                             </ul>
+                        </p>
+                    </section>
+                </div>
+
+                <div class="service-box">
+                    <!-- <img src="https://4vector.com/i/free-vector-blog-this-icon-clip-art_117022_Blog_This_Icon_clip_art_hight.png" alt="Visual Storytelling"> -->
+                    <h3>Visual Storytelling</h3>
+                    <p>Enhance your blog with stunning visual content and photography tips.Visual storytelling is a technique that tells a story or communicates information through the use of visual arts, such as video, photography, illustration, comics, anime, animation, film, graphic design, or other visual means1
+                        Visual storytelling can help you engage and inspire your audience, as well as convey complex ideas in a simple and memorable way.
+                        <ol>
+                            <li>It can capture attention faster and longer than text</li>
+                            <li>It can appeal to emotions and create empathy with the characters or situations.</li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <!-- <img src="https://4vector.com/i/free-vector-blog-this-icon-clip-art_117022_Blog_This_Icon_clip_art_hight.png" alt="Content Strategy"> -->
+                    <h3>Content Strategy</h3>
+                    <p>Develop effective content strategies to engage and grow your audience.Content strategy is the process of planning, creating, publishing, managing, and governing content that meets the needs of your audience and your business goals.
+                        Content can be any type of information that you share with your audience, such as text, images, videos, audio, or interactive elements
+                        <ol>
+                            <li>What do you want to achieve with your content? How does it align with your overall business objectives and vision?</li>
+                            <li>Who is your target audience? What are their needs, challenges, preferences, and motivations?</li>
+
+                        </ol>
+                    </p>
+                </div>
+            </div>
+            <section id="get-in-touch">
+                <h2>Get in Touch</h2>
+                <p class="promote-blogging-paragraph">Ready to share your adventures? Start your own blog today and let the world experience your travel stories, tips, and discoveries. Join our community of travel enthusiasts and inspire others to explore the world!</p>
+
+                <form action="your_form_processing_script.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Reason to join us:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+        </div>
+    </section>
+
+    <script>
+        function openNewTab(link) {
+            window.open(link, '_blank');
+        }
+        function redirectToNewPage() {
+            window.location.href = "connect.html"; // Replace with the actual URL of your new page
+        }
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2023 TravelEnthusiast Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

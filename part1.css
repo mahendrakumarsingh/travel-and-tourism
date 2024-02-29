@@ -1,0 +1,294 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #555; /* Changed from #333 for better contrast */
+}
+
+
+header {
+    /* background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwww8VhF2KeQBDi6m84KOqk7anD66d7ORDcV1arplTBRmrDtk32zDzNYFCSW3cRNVqiz4jqP2xEmb3vTRIgn0yI48KS4m8U6WEoeAJF_EjGG_zphYvIfrHAQXMHMG5t4mvfvssEu3g04d1g9G-0QmE7cPOgsx94LSL_Niy4iEr3FqWQkAxVKQPUMGH_w/w1200-h630-p-k-no-nu/desktop-wallpaper-entrepreneur-has-the-dream-background-entrepreneurship.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color on the background image */
+    text-align: center;
+    padding: 85px 0; /* Adjust the padding as needed */
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 15/10){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 15/10){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.main-content {
+    /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/020e1179-46f8-43ff-9c44-4280cde630ec/ddbwg9j-44597cd3-2e19-481d-9733-a824f7e0f2b1.jpg/v1/fill/w_1131,h_707,q_70,strp/beautiful_mountain_sunrise_wallpaper_hd_4k_by_sahibdm_ddbwg9j-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvMDIwZTExNzktNDZmOC00M2ZmLTljNDQtNDI4MGNkZTYzMGVjXC9kZGJ3ZzlqLTQ0NTk3Y2QzLTJlMTktNDgxZC05NzMzLWE4MjRmN2UwZjJiMS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OiyLo1IZtbjwzIaPEFPf_23kXy8pAkb9YIwgYoTELB0'); */
+    background-size: cover;
+    background-position: center;
+    margin: 0px 0px;
+    /* width: 70%; */
+    /* background-color: rgb(34, 32, 29); */
+}
+
+.main-header{
+    z-index: 1; 
+    color: transparent;
+}
+
+section {
+    margin: 0.25em;
+} 
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 100px;
+}
+
+
+.main-header h1 {
+    font-size: 3em;
+    color: whitesmoke;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.main-header p {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: blue;
+}
+
+.features {
+    margin: 40px 0;
+}
+
+.feature-box {
+    float: left;
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.feature-icon {
+    font-size: 2em;
+    margin-bottom: 20px;
+    /* color: #333; */
+}
+
+.features::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.feature-icon:hover {
+    transform: scale(1.2); /* Scale factor - adjust as needed */
+}
+.feature-box:hover{
+    transform: scale(1.1);
+}
+.services {
+    margin: 5px 0;
+}
+
+.service-box {
+    flex: 0 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 17.5px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    /* transform: scale(1.5); */
+}
+.service-box:hover {
+    transform: scale(1.1); 
+}
+
+.service-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1.2em;
+}
+
+.service-box:nth-child(1) {
+    /* background-image: url('https://images6.alphacoders.com/917/thumb-1920-917169.jpg'); */
+    background-image: url('images/Image\ 2.jpg');
+}
+
+.service-box:nth-child(2) {
+    /* background-image: url('https://i.pinimg.com/originals/1f/99/be/1f99be4ab41f627d91dc6d213acea29b.jpg'); */
+    background-image: url('images/Image1.jpg');
+}
+
+.service-box:nth-child(3) {
+    /* background-image: url('http://snowmasschapel.org/wp-content/uploads/2017/03/unnamed-1.jpg'); */
+    background-image: url('images/Image3.jpg');
+}
+
+.service-box img {
+    max-width: 20%; 
+    height: auto;
+    /* display: inline-block; */
+    padding: 0 2rem;
+    margin-bottom: 10px;
+}
+
+
+.service-box p {
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+#get-in-touch {
+    margin-top: 40px;
+}
+
+#get-in-touch h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+#get-in-touch form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#get-in-touch label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#get-in-touch input,
+#get-in-touch textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#get-in-touch button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#get-in-touch button:hover {
+    background-color: #555;
+}
+
+#get-in-touch .promote-blogging-paragraph {
+    font-size: 1.2em;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#get-in-touch h2{
+    color: whitesmoke;
+}
+
+/* Navigation Bar Styles */
+.header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.8);  */
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2; 
+}
+
+.header-nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: rgb(156, 156, 235);
+}
